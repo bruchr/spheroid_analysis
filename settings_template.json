@@ -1,0 +1,20 @@
+// Please remove comments before using this template!
+{
+    "data_structure": "Raw_Data", // "Raw_Data" or "Cell_ACDC"
+    "input_folder": "path/to/data/folder",
+    "out_path_res": "path/where_summary/files_will/be/created",
+    
+    "params": {
+        "ch_nuclei": 1, // Channel of the nuclei signal (counting from 0).
+        "min_volume": 200, // Min or Max allowed volume (µm) of nuclei. Outliers will get discarded.
+        "max_volume": 4000, // Set to zero if no segments should be discarded.
+        "channel_thresh": [25, 25], // Thresholds used to define foreground. Only used for signal_sum_foreground.
+        "seg_identifier": "pp_", // Identifiere to detect segmentation files. E.g. pp_<image_name>.tif
+        "classification_model": "path_to_model" // Optional model path to classify nuclei. Remove line if not used!
+    },
+
+    "var_names_list": [["Channel_1", "Channel_2" ,"Channel_3"]], // Optional. Names of the channels.
+    
+    "parallel_mode": false, // Wether to split spheroids to multiple threads.
+    "max_threads": 4 // Number of threads to use.
+}

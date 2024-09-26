@@ -1,0 +1,17 @@
+name: spheroid_analysis
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - matplotlib=3.6.1
+  - numpy=1.23.4
+  - pandas=1.5.1
+  - pip
+  - pyqt=5.15.7
+  - python=3.9.13
+  - scikit-image=0.19.3
+  - scikit-learn=1.1.2
+  - scipy=1.9.3
+  - tifffile=2022.10.10
+  - tqdm=4.64.1
+  - pip:
